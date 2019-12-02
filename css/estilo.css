@@ -1,0 +1,225 @@
+header{
+    text-align: center;
+    background-image:linear-gradient(rgb(238, 161, 18), white);
+}
+
+header>img#logo{
+    position: relative;
+    animation-name: logo_anim;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo_anim{
+    from{top:50px;}
+    to {bottom: 20px;}
+}
+
+body{
+    font-family: 'Roboto', Arial;
+    font-size: 16px; 
+}
+
+/*Nav*/
+
+nav>ul>li{
+    background-image:linear-gradient(rgb(238, 161, 18), white);
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 16%;  
+}
+
+nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav>ul>li>a:hover{
+    text-decoration: none;
+}
+
+nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0.5%;
+    text-align: center;
+}
+
+#medio{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+}
+
+/*Main*/
+
+main{
+    margin-top: 2px;  
+}
+
+article>p{
+    text-align: justify;
+}
+
+article>p#mas{
+    text-align: center;
+}
+
+article>p>a{
+    text-decoration: none;
+}
+
+article>p#fecha{
+    text-align: right;
+    font-size: 13px;
+}
+
+div#articlePrincipal{
+    border: 1px solid black;
+    margin: 2px;
+}
+
+div#articlePrincipal>article>p#tipo{
+    margin: 13px;
+    border: 1px solid black;
+    text-align: left;
+    width: max-content;
+}
+
+div#articlePrincipal>article>h2{
+    text-align: center;
+    font-stretch: ultra-condensed;
+}
+
+div#articlePrincipal>article>img{
+    display: block;
+    margin: auto;
+    width:60%;
+    border-radius: 4px;
+}
+
+div#articlePrincipal>article>p{
+    text-align: center;
+}
+
+div#articleSecundarios{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: auto;
+}
+
+div#articleSecundarios>article{
+    border: 1px solid black;
+    margin: 2px;
+}
+
+div#articleSecundarios>article>p#tipo{
+    text-align: left;
+    border: 1px solid black;
+    width: max-content;
+    margin: 13px;
+}
+
+
+div#articleSecundarios>article>h3{
+    text-align: center;
+    font-stretch: ultra-condensed;
+}
+
+div#articleSecundarios>article>p{
+    margin: 3px;
+}
+
+div#articleSecundarios>article>p#fecha{
+    text-align: center;
+    font-size: 10px;
+}
+
+div#articleSecundarios>article>img{
+    display: block;
+    margin: auto;
+    width:40%;
+}
+
+/*Aside*/
+
+aside{
+    border: 1px solid black;
+    margin-top: 4px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+aside>section>#login>input:focus{
+    margin: 5px;
+    background: rgb(238, 161, 18);
+}
+
+aside>section>div#login>input#enviar{
+    margin-bottom: 5px;
+}
+
+aside>section>div#buscar>input#buscador{
+    margin:10px;
+}
+
+aside>section>div#equipos{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+aside>section>div#equipos>p>a{
+    text-decoration: none;
+    color: black;
+}
+
+aside>section>div#equipos>p#oeste{
+    text-decoration-line: underline; 
+}
+
+aside>section>div#equipos>p#este{
+    text-decoration-line: underline;
+}
+
+/*Footer*/
+
+footer{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-image:linear-gradient(white,rgb(238, 161, 18));
+}
+
+footer>p{
+    text-align: center;
+}
+
+footer>h3{
+    text-align: right;
+}
+
+footer>div#iconos{
+    text-align: right;
+}
+
+/*Formulario*/
+
+main>form{
+    border: 1px solid black;
+    margin: 20px 80px auto 80px;
+}
+
+#datos{
+    margin:30px;
+    text-align: center;
+}
+
+#mensaje{
+    margin-bottom: 3px;
+}
