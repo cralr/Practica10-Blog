@@ -12,8 +12,8 @@ header>img#logo{
 }
 
 @keyframes logo_anim{
-    from{top:50px;}
-    to {bottom: 20px;}
+    from{top:10px;}
+    to {bottom:20px;}
 }
 
 body{
@@ -29,16 +29,13 @@ nav>ul>li{
     border-radius: 20px;
     display: inline-block;
     font-weight: bold;
-    margin: 0;
     padding: 5px;
-    text-align: center;
-    width: 16%;  
+    width: 150px;  
 }
 
 nav>ul>li>a{
     color: black;
     text-decoration: none;
-    
 }
 
 nav>ul>li>a:hover{
@@ -48,13 +45,13 @@ nav>ul>li>a:hover{
 nav>ul{
     list-style: none;
     margin: 0;
-    padding: 0.5%;
+    padding: 2px;
     text-align: center;
 }
 
 #medio{
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 8fr 2fr;
     grid-template-rows: auto;
 }
 
@@ -65,6 +62,7 @@ main{
 }
 
 article>p{
+    font-family: 'Source Serif Pro', serif;
     text-align: justify;
 }
 
@@ -83,7 +81,7 @@ article>p#fecha{
 
 div#articlePrincipal{
     border: 1px solid black;
-    margin: 2px;
+    margin:1px;
 }
 
 div#articlePrincipal>article>p#tipo{
@@ -111,13 +109,15 @@ div#articlePrincipal>article>p{
 
 div#articleSecundarios{
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: repeat(2, auto) ;
     grid-template-rows: auto;
+    column-gap:3px;
+    row-gap:3px;
 }
 
 div#articleSecundarios>article{
     border: 1px solid black;
-    margin: 2px;
+    
 }
 
 div#articleSecundarios>article>p#tipo{
@@ -152,22 +152,17 @@ div#articleSecundarios>article>img{
 
 aside{
     border: 1px solid black;
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 2px;
     text-align: center;
 }
 
 aside>section>#login>input:focus{
-    margin: 5px;
     background: rgb(238, 161, 18);
 }
 
 aside>section>div#login>input#enviar{
     margin-bottom: 5px;
-}
-
-aside>section>div#buscar>input#buscador{
-    margin:10px;
 }
 
 aside>section>div#equipos{
@@ -187,6 +182,63 @@ aside>section>div#equipos>p#oeste{
 aside>section>div#equipos>p#este{
     text-decoration-line: underline;
 }
+
+aside>section>div#equipos>p>a#rojo:hover{
+    color: red;
+}
+
+aside>section>div#equipos>p>a#rojo{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#verde:hover{
+    color: green;
+}
+
+aside>section>div#equipos>p>a#verde{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#azul:hover{
+    color: blue;
+}
+
+aside>section>div#equipos>p>a#azul{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#negro:hover{
+    color: black;
+}
+
+aside>section>div#equipos>p>a#negro{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#amarillo:hover{
+    color: yellow;
+}
+
+aside>section>div#equipos>p>a#amarillo{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#naranja:hover{
+    color: orange;
+}
+
+aside>section>div#equipos>p>a#naranja{
+    transition: color 0.3s linear 0.2s;
+}
+
+aside>section>div#equipos>p>a#morado:hover{
+    color: purple;
+}
+
+aside>section>div#equipos>p>a#morado{
+    transition: color 0.3s linear 0.2s;
+}
+
 
 /*Footer*/
 
@@ -208,11 +260,22 @@ footer>div#iconos{
     text-align: right;
 }
 
+#iconos img:hover{
+    transform: perspective(700px) rotateY(45deg);
+}
+
 /*Formulario*/
+
+main>p{
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 30px;
+}
 
 main>form{
     border: 1px solid black;
     margin: 20px 80px auto 80px;
+    font-family: 'Source Serif Pro', serif;
 }
 
 #datos{
@@ -222,4 +285,19 @@ main>form{
 
 #mensaje{
     margin-bottom: 3px;
+}
+
+main>form>div>input:valid{
+    background-color: green;
+    color: white;
+}
+
+main>form>div>input:invalid{
+    background-color:  rgb(243, 8, 8);
+    color:white;
+}
+
+/*About me*/
+#sobremi{
+    text-align: center;
 }
